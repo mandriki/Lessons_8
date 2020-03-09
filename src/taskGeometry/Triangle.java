@@ -1,6 +1,6 @@
 package taskGeometry;
 
-public class Triangle extends Figyra {
+public class Triangle implements Figyra {
     private static final String NAME = "Треугольник";
 
     private double A;

@@ -1,6 +1,6 @@
 package taskGeometry;
 
-public abstract class Figyra {
-    public abstract double getArea();
-    public abstract String getName();
+public interface  Figyra {
+    public  double getArea();
+    public  String getName();
 }
