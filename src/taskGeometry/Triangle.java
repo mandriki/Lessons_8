@@ -1,6 +1,6 @@
 package taskGeometry;
 
-public class Triangle implements Figyra {
+public class Triangle extends Figyra {
     private static final String NAME = "Треугольник";
 
     private double A;
@@ -13,9 +13,9 @@ public class Triangle implements Figyra {
         this.C = C;
     }
     @Override
-    public double getArea() {
+    public String getArea() {
         double p = (A + B + C) / 2; // полупериметр триугольника
-        return  Math.sqrt(p * (p - A) * (p - B) * (p - C)); //  формуга Герона
+        return  Math.sqrt(p * (p - A) * (p - B) * (p - C))+ " Площадь"; //  Герон
     }
     @Override
     public String getName() {

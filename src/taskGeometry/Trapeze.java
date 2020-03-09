@@ -1,6 +1,6 @@
 package taskGeometry;
 
-public class Trapeze implements Figyra {
+public class Trapeze extends Figyra {
     private static final String NAME = "Трапеция";
 
     private double prallelSide_A;
@@ -13,8 +13,8 @@ public class Trapeze implements Figyra {
         this.heighth = heighth;
     }
     @Override
-    public double getArea() {
-       return  (prallelSide_A + prallelSide_B)* heighth / 2;
+    public String getArea() {
+       return (prallelSide_A + prallelSide_B)* heighth / 2 + " Площадь ";
     }
     @Override
     public String getName() {

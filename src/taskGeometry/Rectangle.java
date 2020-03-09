@@ -1,6 +1,6 @@
 package taskGeometry;
 
-public class Rectangle implements Figyra {
+public class Rectangle extends Figyra {
     private static final String NAME1 = "Прямоугольник";
     private static final String NAME2 = "Квадрат";
     private double width;
@@ -11,7 +11,8 @@ public class Rectangle implements Figyra {
         this.height = height;
     }
     @Override
-    public double getArea() { return width * height; }
+    public String getArea() {
+        return width * height + " Площадь"; }
     @Override
     public String getName() {
         if (width == height){

@@ -1,7 +1,8 @@
 package taskGeometry;
 
-public class Main {
+import javax.crypto.spec.PSource;
 
+public class Main {
     public static void main(String[] args) {
         Figyra[] figyra = new Figyra[]{new Rectangle(10, 9), /** Прямоулогьник, квадрат*/
                 new Triangle(9, 8, 8), /**Стороны треугольника**/
@@ -9,6 +10,7 @@ public class Main {
                 new Trapeze(6, 9, 7)};
 
         for(Figyra figyrs : figyra)
-            System.out.println(" площадь " + figyrs.getName()+ " = " + figyrs.getArea());
+            System.out.println(" Это " + figyrs.getName()+ " = " + figyrs.getArea());
     }
+
 }

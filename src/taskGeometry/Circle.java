@@ -1,18 +1,18 @@
 package taskGeometry;
 
-public class Circle implements Figyra {
+public class Circle extends Figyra {
     private static final String NAME1 = "Круг";
     private static final String NAME2 = "Эллипс";
-    private double radius1;
-    private double radius2;
+    private  double radius1;
+    private  double radius2;
 
     public Circle(double radius, double radius1) {
         this.radius1 = radius;
         this.radius2 = radius1;
     }
     @Override
-    public double getArea(){
-       return  Math.PI * radius1 * radius2;
+    public String getArea(){
+       return  Math.PI * radius1 * radius2 + " Площадь";
     }
     @Override
     public String getName() {
