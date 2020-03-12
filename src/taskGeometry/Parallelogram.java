@@ -19,5 +19,6 @@ public class Parallelogram implements Figyra {
     }
     public double getSide() { return side; }
     public double getHeight() {return height; }
+    
 }
 
