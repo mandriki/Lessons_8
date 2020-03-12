@@ -1,20 +1,20 @@
 package taskGeometry;
 
-public class Trapeze extends Figyra {
+public  class Trapeze implements Figyra {
     private static final String NAME = "Трапеция";
 
     private double prallelSide_A;
     private double prallelSide_B;
-    private double heighth;
+    private double height;
 
     public Trapeze(double prallelSide_A, double prallelSide_B, double heighth) {
         this.prallelSide_A = prallelSide_A;
         this.prallelSide_B = prallelSide_B;
-        this.heighth = heighth;
+        this.height = heighth;
     }
     @Override
     public String getArea() {
-       return (prallelSide_A + prallelSide_B)* heighth / 2 + " Площадь ";
+       return (prallelSide_A + prallelSide_B)* height / 2 + " -Площадь ";
     }
     @Override
     public String getName() {
@@ -23,19 +23,11 @@ public class Trapeze extends Figyra {
     public double getSideA() {
         return prallelSide_A;
     }
-    public void setSideA(double A) {
-        this.prallelSide_A = prallelSide_A;
-    }
     public double getSideB() {
         return prallelSide_B;
     }
-    public void setSideB(double B) {
-        this.prallelSide_B = prallelSide_B;
-    }
     public double getSideC() {
-        return heighth;
+        return height;
     }
-    public void setSideC(double C) {
-        this.heighth = heighth;
-    }
+
 }
